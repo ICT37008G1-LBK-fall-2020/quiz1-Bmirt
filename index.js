@@ -45,14 +45,14 @@ function getTopStudents(studentsArray1, studentsArray2) {
   return sortedStudents;
 }
 
-[
-  { id: 1, name: "boris", gpa: 4 },
-  { id: 2, name: "nika", gpa: 2 },
-  { id: 1, name: "bumeranga", gpa: 1 },
-];
-[
-  { id: 1, name: "genadi", gpa: 3.5 },
-  { id: 2, name: "spiridoni", gpa: 2.5 },
-  { id: 1, name: "nostradamusi", gpa: 0.3 },
-];
+// [
+//   { id: 1, name: "boris", gpa: 4 },
+//   { id: 2, name: "nika", gpa: 2 },
+//   { id: 1, name: "bumeranga", gpa: 1 },
+// ];
+// [
+//   { id: 1, name: "genadi", gpa: 3.5 },
+//   { id: 2, name: "spiridoni", gpa: 2.5 },
+//   { id: 1, name: "nostradamusi", gpa: 0.3 },
+// ];
 getTopStudents();
