@@ -5,6 +5,8 @@ function getMaxNumberArray(numbersArray) {
   return Math.max(...numbersArray);
 }
 
+console.warn("first task:", getMaxNumberArray([5, -1, 4]));
+
 // 2)დაწერეტ ფუნქცია რომელიც ღებულობს რიცხვენის მასივს და ანრუნებს
 //   დადებითი რიცხვების საშუალო მნიშვნელობას. (მაგალითად თუ გადაეცემა მასივი [-1, 2, 4] უნდა დააბრუნოს 3: (4 + 2) / 2)
 
@@ -20,6 +22,8 @@ function getPositiveNumbersAverage(numbersArray) {
   return positiveNumbersSum / positiveNumbersArray.length;
 }
 
+console.warn("second task:", getPositiveNumbersAverage([1, -3, 5, -7]));
+
 // დაწერეთ ფუნქცია რომელიც ღებულობს სტუდენტების 2 მასივს
 // (თითო სტუდენტი წარმოდგენილია ობიექტით შემდეგი ველებით {id: number, name: string, gpa: number}) და დააბრუნებს უდიდესი gpa-ს მქონე 5 სტუდენტს მასივის სახით. თუ რამდენიმე სტუდენტი არის ერთნაირი
 // gpa-თი და შედის ტოპ 5 gpa-ებში უნდა დააბრუნოს ყველა ასეთი სტუდენტი (მაგალითად თუ სტუდენტებს შემდეგი gpa აქვთ: [2, 2, 3.5, 3.5 4, 4, 4, 4] ფუნქციამ უნდა დააბრუნოს შემდეგი gpa-ს მქონე სტუდენტი:
@@ -27,7 +31,7 @@ function getPositiveNumbersAverage(numbersArray) {
 
 // interface Student {
 //   id: number;
-//   name: String;
+//   name: string;
 //   gpa: number
 // }
 
@@ -45,14 +49,18 @@ function getTopStudents(studentsArray1, studentsArray2) {
   return sortedStudents;
 }
 
-// [
-//   { id: 1, name: "boris", gpa: 4 },
-//   { id: 2, name: "nika", gpa: 2 },
-//   { id: 1, name: "bumeranga", gpa: 1 },
-// ];
-// [
-//   { id: 1, name: "genadi", gpa: 3.5 },
-//   { id: 2, name: "spiridoni", gpa: 2.5 },
-//   { id: 1, name: "nostradamusi", gpa: 0.3 },
-// ];
-getTopStudents();
+console.warn(
+  "third task:",
+  getTopStudents(
+    [
+      { id: 1, name: "boris", gpa: 4 },
+      { id: 2, name: "nika", gpa: 2 },
+      { id: 1, name: "bumeranga", gpa: 1 },
+    ],
+    [
+      { id: 1, name: "genadi", gpa: 3.5 },
+      { id: 2, name: "spiridoni", gpa: 2.5 },
+      { id: 1, name: "nostradamusi", gpa: 0.3 },
+    ]
+  )
+);
